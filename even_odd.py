@@ -27,3 +27,5 @@ fact(5)
 rep_sp("this is new room")
 
 rep_sp("this is new room not ur room")
+
+rep_sp("learning python first time and git")
