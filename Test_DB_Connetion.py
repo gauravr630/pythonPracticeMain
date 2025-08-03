@@ -59,3 +59,14 @@ def test_dup_cnt_tgt():
     print("duplicate tgt count")
     cnt1 = df2.duplicated().sum()
     assert cnt1 == 0, "tgt has duplicates"
+
+
+def test_is_tgt_null():
+    is_studentnull = df2['StudentID'].isnull().any()
+    assert is_studentnull == True, "student ID has null"
+
+
+def test_StudentID_unique():
+    tot_cnt= len(df2)
+    unq_cnt=len(df2['StudentID'].unique())
+    assert tot_cnt==unq_cnt, "Student ID is not unique"
