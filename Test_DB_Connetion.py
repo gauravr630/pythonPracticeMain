@@ -28,7 +28,7 @@ df2.columns = ['StudentID', 'Name', 'Age', 'Grade']
 print("target data below")
 print(df2)
 tgt_cnt = len(df2)
-print("count of rows is :", len(df2))
+print("count of rows is:", len(df2))
 print("duplicate is")
 print("sum of duplicate is ", df2.duplicated().sum())
 
@@ -70,3 +70,4 @@ def test_StudentID_unique():
     tot_cnt= len(df2)
     unq_cnt=len(df2['StudentID'].unique())
     assert tot_cnt==unq_cnt, "Student ID is not unique"
+
